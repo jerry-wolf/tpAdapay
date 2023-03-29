@@ -1,0 +1,28 @@
+{
+  "name": "tpadapay/adapay",
+  "description": "基于adapay1.4.4的composer包",
+  "type": "library",
+  "require": {
+    "php": ">=7.1",
+    "workerman/workerman": "^4.1",
+    "workerman/mqtt": "^1.0",
+    "ext-mbstring": "*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-openssl": "*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "cdk123",
+      "email": "652769507@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AdaPay\\": ["src/AdapayCore","src/AdapayCore/utils"],
+      "AdaPaySdk\\": ["src/AdapaySdk","src/AdapaySdk/Utils"]
+    }
+  },
+  "minimum-stability": "dev"
+}
