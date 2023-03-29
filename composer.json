@@ -20,9 +20,16 @@
   ],
   "autoload": {
     "psr-4": {
-      "AdaPay\\": ["src/AdapayCore","src/AdapayCore/utils"],
-      "AdaPaySdk\\": ["src/AdapaySdk","src/AdapaySdk/Utils"]
+      "AdaPay\\": [
+        "src/AdapayCore",
+        "src/AdapayCore/utils"
+      ],
+      "AdaPaySdk\\": [
+        "src/AdapaySdk",
+        "src/AdapaySdk/Utils"
+      ]
     }
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
