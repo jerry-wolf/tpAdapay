@@ -13,7 +13,7 @@ class Payment extends AdaPay{
     public function __construct()
     {
         parent::__construct();
-        $this->sdk_tools = SDKTools::getInstance();
+        // $this->sdk_tools = SDKTools::getInstance();
     }
 
 

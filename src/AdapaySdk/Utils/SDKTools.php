@@ -24,14 +24,14 @@ class SDKTools extends AdaPay
         return self::$instance;
     }
 
-    public function post($params=array(), $endpoint){
+    public function post($params, $endpoint){
         $request_params = $this->do_empty_data($params);
         $req_url =  $this->gateWayUrl .$endpoint;
         $header =  $this->get_request_header($req_url, $request_params, self::$header);
         return $this->ada_request->curl_request($req_url, $request_params, $header, $is_json=true);
     }
     
-    public function get($params=array(), $endpoint){
+    public function get($params, $endpoint){
         ksort($params);
         $request_params = $this->do_empty_data($params);
         $req_url =  $this->gateWayUrl . $endpoint ;
